@@ -1,0 +1,64 @@
+  .navigation__tabPage{
+    margin-bottom: 2rem;
+    position: relative;
+  .card-header{
+    background-color:  $color-secondary;
+    a{
+      width: 100%;
+      display: block;
+      cursor: pointer;
+      line-height: 2;
+      color: $light-primary;
+      &:after{
+        width: 15px;
+        height: 15px;
+        border-top: 1px solid $color-white;
+        border-right: 1px solid $color-white;
+        position: relative;
+        float: right;
+        margin-right: 10px;
+        content: " ";
+        top: 10px;
+        transform: rotate(-45deg);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+    &.nav-light{
+      background-color: $color-primary;
+      a{color: $color-white;}
+    }
+  }
+  .card-header .collapsed:after{
+    top: 3px;
+    transform: rotate(135deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  #raceDetails-accordion{
+    background-color: $color-primary;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    width: 100%;
+    a{
+      text-decoration: none;
+      color: $color-white;
+      width: 90%;
+      margin: auto;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      cursor: pointer;
+    &:hover,
+    &:active{
+      color: $light-primary;
+    }
+      &:not(:last-child){
+      border-bottom: 1px solid $light-primary;
+    }
+    }
+  }
+
+}

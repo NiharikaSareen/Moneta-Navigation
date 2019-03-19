@@ -1,0 +1,31 @@
+header{
+	height: 8rem;
+	background: $color-primary url('../img/header.png') no-repeat left top;
+	position: relative;
+	img{
+		position: absolute;
+    	top: 13%;
+    	left: 50%;
+         @include respond(phone){
+         left: 5%;
+         }
+    &.img-twitter{
+    	left:90%;
+         @include respond(tab-port){
+            left: 90%;
+         }
+        @include respond(phone) {
+            left:80%;
+        }
+    }
+    &.img-facebook{
+    	left:85%;
+        @include respond(tab-port){
+            left: 84%;
+         }
+        @include respond(phone) {
+            left:68%;
+        }
+    }
+	}
+}

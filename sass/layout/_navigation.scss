@@ -1,0 +1,92 @@
+#menu {
+  font-size: 12px;
+  background-color:$color-primary;
+  height: 44px; 
+  overflow: hidden; 
+  width: 70%;
+  position:absolute;
+  z-index:9;
+  padding: 0 2rem;
+  @include respond(phone){
+        margin-top: 4.25rem;
+        width: 100%;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    max-height: 88px;
+    position: relative;
+  }
+  li {
+    display: inline-block;
+    a {
+      display: inline-block;
+      padding: 0 1em;
+      color: $color-white;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+      line-height: 44px; 
+      height: 44px;
+    }
+  }
+}
+
+
+ 
+
+#menu a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+#menu li:last-child { 
+  position: absolute;
+  right: 0;
+  bottom: 44px; 
+  padding-left: 3em;
+}
+
+#menu li:nth-last-child(2) { 
+  display: none;
+}
+
+#menu:target {
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+
+#menu:target ul {
+  max-height: none;
+  background-color: $color-secondary;
+}
+
+nav#menu:target li {
+  display: block;
+}
+
+#menu:target a {
+  display: block;
+  padding: 0 2em;
+  &:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+}
+
+#menu:target li:not(:first-child) {
+  margin-top: 2px;
+}
+
+#menu:target li:last-child {
+  display: none;
+}
+
+#menu:target li:nth-last-child(2) {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}

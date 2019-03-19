@@ -1,0 +1,26 @@
+.past__winners{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 10px;
+	text-align: center;
+	div{
+		padding: 8px 4px;
+	    border-bottom: 1px solid $light-primary;
+	    align-self: center;
+	    &:last-child{
+	    border-bottom: 0; 
+	    }
+	    &:nth-of-type(odd){
+		border-right: 1px solid $light-primary;
+    }
+	}
+	&--year{
+		color:$color-primary;
+		font-size: 1.2rem;
+		margin-bottom: 0;
+	}
+	&--name{
+		font-size: 1.4rem;
+		margin-bottom:0;
+	}
+}

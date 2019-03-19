@@ -1,0 +1,54 @@
+.title{
+	text-transform: uppercase;
+	&--head{
+		margin-bottom:0;
+		margin-top: 5rem;
+		font-size: 1.6rem;
+		color: $color-primary;
+		letter-spacing: 1px;
+		line-height: 2;
+	}
+	&--main{
+		font-size: 3.4rem;
+		font-weight: 700;
+		line-height: 3rem;
+	}
+	&--main-sub{
+		font-size: 2.2rem;
+		color: $color-primary;
+		font-weight: 500;
+		line-height: 18px;
+		span{
+			color: $color-black;
+			font-size: 1.4rem;
+		}
+	}
+	&__ran{
+		font-size: 1.4rem;
+		&:before{
+		 	content: '';
+			display: inline-block;
+			width: 0.5rem;
+		 	height: 0.5rem;
+		 	-moz-border-radius: 7.5px;
+			-webkit-border-radius: 7.5px;
+			border-radius: 7.5px;
+			background-color: $color-primary;
+		}
+	}
+}
+
+.navigation__text{
+	position: relative;
+	top: 3rem;
+	padding: 5rem 10rem;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	@include respond(phone) {
+            padding: 5rem 5rem; 
+        }
+}
+
+

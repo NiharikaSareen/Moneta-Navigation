@@ -1,0 +1,13 @@
+.toggle-content{
+	visibility: visible;
+	&.is-hidden{
+		visibility: hidden;
+	}
+}
+.bold{
+    font-weight: bold;
+}
+
+.primary-text{
+	color: $color-primary;
+}

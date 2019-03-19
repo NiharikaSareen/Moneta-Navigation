@@ -1,0 +1,56 @@
+.nav__primary{
+	background-color: $color-primary;
+	position: absolute !important;
+	z-index:2;
+	width:	30%;
+	font-size: 1.6rem;
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 44px;
+    right:0;
+    z-index:99;
+     @include respond(phone){
+		width:	100%;
+		background-color: $color-secondary;
+     }
+    .navbar-brand{
+    color: $color-white;
+    margin-left: 3rem;
+    text-transform: uppercase;
+    }
+	.nav-item{
+		padding: 2rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $light-primary;
+		ul{
+		list-style: none;
+		li a{
+
+	color: $color-white;
+	text-decoration: none;
+	text-transform: none;	
+	    display: block;
+    padding: 1.5rem 0rem;
+
+		}
+	}
+	}
+&.nav-light{
+	background-color: $color-primary;
+	.navbar-brand{
+	visibility: hidden;
+	}
+}
+.navbar-collapse{
+	background-color: $color-primary;
+}
+}
